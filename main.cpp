@@ -31,7 +31,7 @@ ZL_Sound sndMenuMusic, sndSelect;
 #include <../Opt/ZL_TouchInput.h>
 
 #ifdef SCENE_EDITOR
-static const int DisplayFlags = ZL_DISPLAY_ALLOWRESIZEVERTICAL | ZL_DISPLAY_OVERRIDEANDROIDVOLUMEKEYS;
+static const int DisplayFlags = ZL_DISPLAY_ALLOWRESIZEVERTICAL | ZL_DISPLAY_ANDROID_OVERRIDEVOLUMEKEYS;
 #else
 static const int DisplayFlags = ZL_DISPLAY_ALLOWRESIZEVERTICAL;
 #endif

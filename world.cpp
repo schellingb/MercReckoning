@@ -1795,8 +1795,8 @@ void DrawRandomMud(int w32, int h32)
 		else if (mx >     0 && my >     0 && p[-1-w16]) srfMudTile.SetTilesetIndex(15).Draw(mx*16, my*16);
 	}
 
-	delete mud_map;
-	delete frac;
+	delete[] mud_map;
+	delete[] frac;
 }
 
 void DrawTileMap(unsigned char *map32, int w32, int h32, ZL_Surface& srf, bool fill_outside = true)
@@ -1863,7 +1863,7 @@ void DrawTileMap(unsigned char *map32, int w32, int h32, ZL_Surface& srf, bool f
 			if (map32[(my/2)*w32+(mx/2)] > 0) { ZL_Display::DrawRect(mx/2*32, my/2*32, mx/2*32+32, my/2*32+32, ZL_Color::Blue, ZLRGBA(0,0,255,.1)); }
 	#endif
 
-	delete map16;
+	delete[] map16;
 }
 
 /*
